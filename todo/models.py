@@ -11,3 +11,11 @@ class Todo(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+class Student(models.Model):
+    first_name=models.CharField(max_length=100)
+    last_name=models.CharField(max_length=100)
+    student_age= models.IntegerField(default=False)
+
+    def __str__(self) -> str:
+        return self.first_name
